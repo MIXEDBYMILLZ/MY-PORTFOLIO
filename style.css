@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0f111a;
+  color: #e0e6ed;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #16192b;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #00f2fe;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #e0e6ed;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00f2fe;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #16192b 0%, #0f111a 100%);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #a0aec0;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(45deg, #4facfe, #00f2fe);
+  color: #0f111a;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Player Container */
+.player-container {
+  max-width: 600px;
+  margin: -30px auto 40px auto;
+  padding: 20px;
+  background: #1c2035;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.now-playing {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #00f2fe;
+}
+
+/* Grid & Cards */
+.portfolio-section, .about-section, .contact-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.track-card {
+  background-color: #16192b;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #232845;
+  transition: border-color 0.3s;
+}
+
+.track-card:hover {
+  border-color: #00f2fe;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  color: #4facfe;
+  margin-bottom: 15px;
+}
+
+.track-card h3 {
+  margin-bottom: 8px;
+}
+
+.track-card p {
+  font-size: 0.9rem;
+  color: #a0aec0;
+  margin-bottom: 20px;
+}
+
+.play-btn {
+  background: transparent;
+  border: 1px solid #00f2fe;
+  color: #00f2fe;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.play-btn:hover {
+  background: #00f2fe;
+  color: #0f111a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #16192b;
+  color: #718096;
+}
