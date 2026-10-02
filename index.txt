@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sound Design & Audio Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo"><i class="fa-solid fa-waveform"></i> YOUR NAME</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Sound Designer & Audio Engineer</h1>
+    <p>Crafting immersive audio experiences for games, film, and media.</p>
+    <a href="#portfolio" class="btn">Listen to My Work</a>
+  </header>
+
+  <!-- Audio Player Deck -->
+  <section class="player-container">
+    <div class="now-playing">
+      <span id="track-title">Select a track below</span>
+      <span id="track-category">---</span>
+    </div>
+    <audio id="audio-player" controls style="width: 100%; margin-top: 10px;">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section id="portfolio" class="portfolio-section">
+    <h2>Featured Sound Work</h2>
+    <div class="portfolio-grid">
+
+      <!-- Track 1 -->
+      <div class="track-card" data-src="audio/track1.mp3" data-title="Sci-Fi Weapon & Magic FX" data-cat="Game Sound Design">
+        <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3>Sci-Fi Weapon & Magic FX</h3>
+        <p>Game SFX • Synthesized & Layered Sound Design</p>
+        <button class="play-btn"><i class="fa-solid fa-play"></i> Play Track</button>
+      </div>
+
+      <!-- Track 2 -->
+      <div class="track-card" data-src="audio/track2.mp3" data-title="Dark Orchestral Theme" data-cat="Film Scoring">
+        <div class="card-icon"><i class="fa-solid fa-music"></i></div>
+        <h3>Dark Orchestral Theme</h3>
+        <p>Cinematic • Full Orchestral Composition & Mix</p>
+        <button class="play-btn"><i class="fa-solid fa-play"></i> Play Track</button>
+      </div>
+
+      <!-- Track 3 -->
+      <div class="track-card" data-src="audio/track3.mp3" data-title="Forest Environment Ambience" data-cat="Foley & Ambient">
+        <div class="card-icon"><i class="fa-solid fa-tree"></i></div>
+        <h3>Forest Environment Ambience</h3>
+        <p>Field Recording • Spatial Audio Design & Cleaning</p>
+        <button class="play-btn"><i class="fa-solid fa-play"></i> Play Track</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>I am a sound designer with over X years of experience in audio post-production, mixing, dialogue editing, and sound synthesis. I specialize in bringing visual media to life through acoustic storytelling.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Get In Touch</h2
+    <p>Interested in collaborating or hiring me for a project?</p>
+    <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
